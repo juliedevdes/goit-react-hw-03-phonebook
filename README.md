@@ -1,4 +1,4 @@
-# React Course 3-nd homework ＼ʕ •ᴥ•ʔ＼
+# React Course 3-d homework ＼ʕ •ᴥ•ʔ＼
 
 𓏲 𓏲 component's life cycle 𓏲 𓏲 ／ʕ •ᴥ•ʔ／ 𓏲 𓏲 phonebook
 

@@ -12,6 +12,19 @@ class App extends React.Component {
     filter: "",
   };
 
+  componentDidMount() {
+    console.log("mount");
+    this.setState({
+      contacts: JSON.parse(localStorage.getItem("contacts")) || [],
+    });
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (this.state.contacts !== prevState.contacts) {
+      localStorage.setItem("contacts", JSON.stringify(this.state.contacts));
+    }
+  }
+
   onSubmit = (formState) => {
     if (!this.state.contacts.some((el) => el.name === formState.name)) {
       this.setState({
